@@ -1,0 +1,49 @@
+dn: ou=usuarios,dc=centro,dc=local
+objectClass: organizationalUnit
+ou: usuarios
+
+dn: ou=grupos,dc=centro,dc=local
+objectClass: organizationalUnit
+ou: grupos
+
+dn: uid=alumno1,ou=usuarios,dc=centro,dc=local
+objectClass: inetOrgPerson
+uid: alumno1
+sn: Uno
+cn: Alumno Uno
+userPassword: 1234
+
+dn: uid=alumno2,ou=usuarios,dc=centro,dc=local
+objectClass: inetOrgPerson
+uid: alumno2
+sn: Dos
+cn: Alumno Dos
+userPassword: 1234
+
+dn: uid=profe1,ou=usuarios,dc=centro,dc=local
+objectClass: inetOrgPerson
+uid: profe1
+sn: Profesor
+cn: Alvaro
+userPassword: 1234
+
+dn: uid=profe2,ou=usuarios,dc=centro,dc=local
+objectClass: inetOrgPerson
+uid: profe2
+sn: Profesor
+cn: Lenny    
+userPassword: 1234
+
+dn: cn=alumnos,ou=grupos,dc=centro,dc=local
+objectClass: groupOfNames
+cn: alumnos
+member: uid=alumno1,ou=usuarios,dc=centro,dc=local
+member: uid=alumno2,ou=usuarios,dc=centro,dc=local
+
+dn: cn=profesores,ou=grupos,dc=centro,dc=local
+objectClass: groupOfNames
+cn: profesores
+member: uid=profe1,ou=usuarios,dc=centro,dc=local
+member: uid=profe2,ou=usuarios,dc=centro,dc=local
+
+

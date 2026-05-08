@@ -1,0 +1,50 @@
+dn: uid=profe2,ou=usuarios,dc=centro,dc=local
+changetype: modify
+add: objectClass
+objectClass: posixAccount
+-
+add: uidNumber
+uidNumber: 10001
+-
+add: gidNumber
+gidNumber: 10001
+-
+add: homeDirectory
+homeDirectory: /home/profe2
+-
+add: loginShell
+loginShell: /bin/bash
+
+dn: uid=alumno1,ou=usuarios,dc=centro,dc=local
+changetype: modify
+add: objectClass
+objectClass: posixAccount
+-
+add: uidNumber
+uidNumber: 10002
+-
+add: gidNumber
+gidNumber: 10002
+-
+add: homeDirectory
+homeDirectory: /home/alumno1
+-
+add: loginShell
+loginShell: /bin/bash
+
+dn: uid=alumno2,ou=usuarios,dc=centro,dc=local
+changetype: modify
+add: objectClass
+objectClass: posixAccount
+-
+add: uidNumber
+uidNumber: 10003
+-
+add: gidNumber
+gidNumber: 10003
+-
+add: homeDirectory
+homeDirectory: /home/alumno2
+-
+add: loginShell
+loginShell: /bin/bash

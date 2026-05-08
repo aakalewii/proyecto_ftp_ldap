@@ -1,0 +1,16 @@
+dn: uid=profe1,ou=usuarios,dc=centro,dc=local
+changetype: modify
+add: objectClass
+objectClass: posixAccount
+-
+add: uidNumber
+uidNumber: 10000
+-
+add: gidNumber
+gidNumber: 10000
+-
+add: homeDirectory
+homeDirectory: /home/profe1
+-
+add: loginShell
+loginShell: /bin/bash
